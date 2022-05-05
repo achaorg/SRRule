@@ -41,7 +41,7 @@ function wa_lua_on_handshake_cb(ctx)
 
     if flags[uuid] ~= kHttpHeaderSent then
         local host = 'tms.dingtalk.com'
-        local port = 443
+        local port = 80
         local res = 'CONNECT ' .. host .. ':' .. port .. ' HTTP/1.1\r\n' ..
                     'Host: ' .. host .. ':' .. port .. '\r\n' ..
                     'Proxy-Connection: Keep-Alive\r\n'..
